@@ -1,4 +1,4 @@
-# AnimeCaos Analytics Platform
+# AnimeCaos
 
 Este repositório reúne dois produtos que trabalham juntos em produção:
 
