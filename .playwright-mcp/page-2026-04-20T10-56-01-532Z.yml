@@ -1,0 +1,244 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "AnimeCaos AnimeCaos" [ref=e5] [cursor=pointer]:
+          - /url: /pt
+          - img "AnimeCaos" [ref=e6]
+          - generic [ref=e7]: AnimeCaos
+        - navigation [ref=e8]:
+          - generic [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: /pt
+            - link "Sobre" [ref=e11] [cursor=pointer]:
+              - /url: /pt/about
+            - link "Download" [ref=e12] [cursor=pointer]:
+              - /url: /pt/download
+            - link "Como Usar" [ref=e13] [cursor=pointer]:
+              - /url: /pt/how-to-use
+            - link "Contato" [ref=e14] [cursor=pointer]:
+              - /url: /pt/contact
+        - generic [ref=e15]:
+          - link "en" [ref=e16] [cursor=pointer]:
+            - /url: /en/about
+          - link "GitHub" [ref=e17] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/animecaos
+            - img [ref=e18]
+            - text: GitHub
+          - link "Download" [ref=e21] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/AnimeCaos/releases/download/v0.1.3/Setup_AnimeCaos_v0.1.3.exe
+            - img [ref=e22]
+            - text: Download
+    - main [ref=e25]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - img [ref=e30]
+            - text: open source
+          - heading "Por que o AnimeCaos existe?" [level=1] [ref=e34]
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: "Quem assiste anime no Brasil sabe como é: quatro abas abertas, dez anúncios fechados, player que não carrega, episódio que some no meio da temporada."
+            - paragraph [ref=e37]: O AnimeCaos surgiu disso. Automatiza a navegação, extrai os links diretamente dos players e junta tudo numa interface que não atrapalha. Sem servidor, sem conta, sem mensalidade.
+            - paragraph [ref=e38]: É open source, feito em Python, e acaba sendo um bom campo de estudo pra quem quer entender automação web, scraping e busca aproximada na prática. Pull requests são bem-vindos.
+        - generic [ref=e39]:
+          - heading "Stack Técnica" [level=2] [ref=e40]
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - img [ref=e44]
+              - generic [ref=e47]:
+                - paragraph [ref=e48]: Python 3.10+
+                - paragraph [ref=e49]: Core language
+            - generic [ref=e50]:
+              - img [ref=e52]
+              - generic [ref=e55]:
+                - paragraph [ref=e56]: Selenium
+                - paragraph [ref=e57]: Web automation & Cloudflare bypass
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - generic [ref=e64]:
+                - paragraph [ref=e65]: BeautifulSoup
+                - paragraph [ref=e66]: HTML parsing
+            - generic [ref=e67]:
+              - img [ref=e69]
+              - generic [ref=e72]:
+                - paragraph [ref=e73]: FuzzyWuzzy
+                - paragraph [ref=e74]: Fuzzy search / typo tolerance
+            - generic [ref=e75]:
+              - img [ref=e77]
+              - generic [ref=e79]:
+                - paragraph [ref=e80]: yt-dlp + mpv
+                - paragraph [ref=e81]: Stream extraction & playback
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - generic [ref=e88]:
+                - paragraph [ref=e89]: PySide6
+                - paragraph [ref=e90]: Desktop GUI framework
+            - generic [ref=e91]:
+              - img [ref=e93]
+              - generic [ref=e97]:
+                - paragraph [ref=e98]: AniList GraphQL
+                - paragraph [ref=e99]: Metadata & cover art API
+            - generic [ref=e100]:
+              - img [ref=e102]
+              - generic [ref=e106]:
+                - paragraph [ref=e107]: PyInstaller
+                - paragraph [ref=e108]: Standalone .exe distribution
+        - generic [ref=e109]:
+          - heading "Changelog" [level=2] [ref=e110]:
+            - img [ref=e111]
+            - text: Changelog
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - img [ref=e119]
+              - generic [ref=e123]:
+                - generic [ref=e124]:
+                  - generic [ref=e125]: v0.1.3
+                  - generic [ref=e126]: latest
+                  - generic [ref=e127]: 16 de abr. de 2026
+                - generic [ref=e128]:
+                  - generic [ref=e129]:
+                    - img [ref=e131]
+                    - generic [ref=e133]: "Conta AniList: sincronização automática de episódios assistidos, animes concluídos e tempo total"
+                  - generic [ref=e134]:
+                    - img [ref=e136]
+                    - generic [ref=e138]: "Discord Rich Presence: status exibe anime e episódio atual com timer durante reprodução"
+                  - generic [ref=e139]:
+                    - img [ref=e141]
+                    - generic [ref=e143]: "Player mais rápido: cache e prefetch reduzem tempo de início para ~5 segundos"
+                  - generic [ref=e144]:
+                    - img [ref=e146]
+                    - generic [ref=e148]: Interface de Conta redesenhada com layout lado a lado e animações suaves
+                  - link "Ver release no GitHub" [ref=e149] [cursor=pointer]:
+                    - /url: https://github.com/henriqqw/AnimeCaos/releases/tag/v0.1.3
+                    - text: Ver release no GitHub
+                    - img [ref=e150]
+            - generic [ref=e154]:
+              - img [ref=e157]
+              - generic [ref=e161]:
+                - generic [ref=e162]:
+                  - generic [ref=e163]: v0.1.2
+                  - generic [ref=e164]: 15 de mar. de 2026
+                - generic [ref=e165]:
+                  - generic [ref=e166]:
+                    - img [ref=e168]
+                    - generic [ref=e170]: "Capas dinâmicas: placeholder com gradiente e cor única por anime enquanto a capa real carrega"
+                  - generic [ref=e171]:
+                    - img [ref=e173]
+                    - generic [ref=e175]: "Download Manager: popup com progresso, velocidade, ETA, tela de conclusão e botão cancelar"
+                  - generic [ref=e176]:
+                    - img [ref=e178]
+                    - generic [ref=e180]: Navegação por botões laterais do mouse com histórico completo
+                  - generic [ref=e181]:
+                    - img [ref=e183]
+                    - generic [ref=e185]: Tela de boas-vindas na busca com ícone e atalhos de teclado
+                  - generic [ref=e186]:
+                    - img [ref=e188]
+                    - generic [ref=e190]: Repositório de animes expandido com muito mais títulos disponíveis
+                  - link "Ver release no GitHub" [ref=e191] [cursor=pointer]:
+                    - /url: https://github.com/henriqqw/AnimeCaos/releases/tag/v0.1.2
+                    - text: Ver release no GitHub
+                    - img [ref=e192]
+            - generic [ref=e196]:
+              - img [ref=e199]
+              - generic [ref=e203]:
+                - generic [ref=e204]:
+                  - generic [ref=e205]: v0.1.1
+                  - generic [ref=e206]: 09 de mar. de 2026
+                - generic [ref=e207]:
+                  - generic [ref=e208]:
+                    - img [ref=e210]
+                    - generic [ref=e212]: "Atualização automática: o app verifica e instala novas versões automaticamente"
+                  - generic [ref=e213]:
+                    - img [ref=e215]
+                    - generic [ref=e217]: Histórico e watchlist preservados entre atualizações e reinstalações
+                  - generic [ref=e218]:
+                    - img [ref=e220]
+                    - generic [ref=e222]: Capas voltaram a ser baixadas e exibidas corretamente no painel de detalhes
+                  - generic [ref=e223]:
+                    - img [ref=e225]
+                    - generic [ref=e227]: Plugin BetterAnime removido — site permanentemente offline
+                  - link "Ver release no GitHub" [ref=e228] [cursor=pointer]:
+                    - /url: https://github.com/henriqqw/AnimeCaos/releases/tag/v0.1.1
+                    - text: Ver release no GitHub
+                    - img [ref=e229]
+            - generic [ref=e233]:
+              - img [ref=e236]
+              - generic [ref=e239]:
+                - generic [ref=e240]:
+                  - generic [ref=e241]: v0.1.0
+                  - generic [ref=e242]: 30 de nov. de 2025
+                - generic [ref=e243]:
+                  - generic [ref=e244]:
+                    - img [ref=e246]
+                    - generic [ref=e248]: "Painel de Controle AniList: capa original e sinopse em português ao selecionar um anime"
+                  - generic [ref=e249]:
+                    - img [ref=e251]
+                    - generic [ref=e253]: "Watchlist: favorite animes no Painel de Controle, salvo localmente em watchlist.json"
+                  - generic [ref=e254]:
+                    - img [ref=e256]
+                    - generic [ref=e258]: Downloads via yt-dlp em background com progresso no Painel de Eventos
+                  - generic [ref=e259]:
+                    - img [ref=e261]
+                    - generic [ref=e263]: "Auto-Play: intercepta sinal de fim do mpv e avança automaticamente para o próximo episódio"
+                  - link "Ver release no GitHub" [ref=e264] [cursor=pointer]:
+                    - /url: https://github.com/henriqqw/AnimeCaos/releases/tag/v0.1.0
+                    - text: Ver release no GitHub
+                    - img [ref=e265]
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - heading "Código aberto" [level=3] [ref=e271]
+            - paragraph [ref=e272]: O repositório é público no GitHub. Qualquer um pode ler o código, abrir uma issue, mandar um PR ou fazer um fork e levar o projeto pra onde quiser.
+          - link "Ver Repositório" [ref=e273] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/animecaos
+            - text: Ver Repositório
+            - img [ref=e274]
+    - contentinfo [ref=e278]:
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - generic [ref=e282]:
+              - img "AnimeCaos" [ref=e283]
+              - generic [ref=e284]: AnimeCaos
+            - paragraph [ref=e285]: Projeto open source — MIT License
+          - generic [ref=e286]:
+            - paragraph [ref=e287]: Pages
+            - generic [ref=e288]:
+              - link "Home" [ref=e289] [cursor=pointer]:
+                - /url: /pt
+              - link "Sobre" [ref=e290] [cursor=pointer]:
+                - /url: /pt/about
+              - link "Download" [ref=e291] [cursor=pointer]:
+                - /url: /pt/download
+              - link "Como Usar" [ref=e292] [cursor=pointer]:
+                - /url: /pt/how-to-use
+              - link "Contato" [ref=e293] [cursor=pointer]:
+                - /url: /pt/contact
+          - generic [ref=e294]:
+            - paragraph [ref=e295]: Links
+            - generic [ref=e296]:
+              - link "GitHub" [ref=e297] [cursor=pointer]:
+                - /url: https://github.com/henriqqw/animecaos
+                - img [ref=e298]
+              - link "Twitter" [ref=e301] [cursor=pointer]:
+                - /url: https://x.com/getanimecaos
+                - img [ref=e302]
+              - link "Discord" [ref=e304] [cursor=pointer]:
+                - /url: https://discord.com/users/chaosphory
+                - img [ref=e305]
+              - link "Instagram" [ref=e307] [cursor=pointer]:
+                - /url: https://www.instagram.com/getanimecaos/
+                - img [ref=e308]
+              - link "LinkedIn" [ref=e311] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/henrique-lanzoni-ab0828371/
+                - img [ref=e312]
+              - link "Email" [ref=e316] [cursor=pointer]:
+                - /url: mailto:lanzonicmpny13@gmail.com
+                - img [ref=e317]
+        - generic [ref=e321]:
+          - paragraph [ref=e322]:
+            - text: Feito com ☕ por
+            - link "caosdev" [ref=e323] [cursor=pointer]:
+              - /url: https://caosdev.vercel.app
+          - paragraph [ref=e324]: Este projeto é apenas um webscraper de links públicos. O conteúdo é de responsabilidade de seus respectivos proprietários.
+  - button "Open Next.js Dev Tools" [ref=e330] [cursor=pointer]:
+    - img [ref=e331]

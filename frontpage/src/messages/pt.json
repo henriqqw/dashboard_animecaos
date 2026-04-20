@@ -8,10 +8,10 @@
   },
   "hero": {
     "badge": "Open Source",
-    "headline1": "Anime.",
-    "headline2": "Sem anúncio.",
-    "headline3": "Sem drama.",
-    "sub": "O AnimeCaos busca, extrai e entrega os links direto da fonte — tudo em um player limpo, rápido e com suporte a download.",
+    "headline1": "AnimeCaos",
+    "headline2": "Streaming de Anime",
+    "headline3": "",
+    "sub": "O AnimeCaos busca, extrai e entrega os links direto da fonte. Tudo em um player limpo, rápido e com suporte a download. Também possui integração com AniList!",
     "cta_download": "Baixar para Windows",
     "cta_github": "Ver no GitHub",
     "cta_version": "Última versão"
@@ -68,6 +68,7 @@
     "linux_build_label": "Build",
     "linux_run_label": "Executar após o build",
     "linux_note": "Requer Flatpak e dependências de build instaladas.",
+    "includes_title": "O que vem no pacote",
     "source_title": "Instalar pelo source",
     "requirements": "Requisitos do Sistema",
     "req_items": [
@@ -83,12 +84,12 @@
   },
   "about": {
     "title": "Por que o AnimeCaos existe?",
-    "p1": "Quem assiste anime no Brasil conhece o ritual: abrir quatro sites, fechar dez anúncios, torcer para o player carregar, procurar o episódio certo entre páginas mal organizadas.",
-    "p2": "O AnimeCaos resolve isso. Ele faz o trabalho sujo nos bastidores — automatiza a navegação, extrai os links reais dos players, e entrega tudo dentro de uma interface limpa. Sem servidor. Sem assinatura. Local-first.",
-    "p3": "É open source, construído em Python, e funciona como laboratório prático de automação web, scraping e busca aproximada. Contribuições são bem-vindas.",
+    "p1": "Quem assiste anime no Brasil sabe como é: quatro abas abertas, dez anúncios fechados, player que não carrega, episódio que some no meio da temporada.",
+    "p2": "O AnimeCaos surgiu disso. Automatiza a navegação, extrai os links diretamente dos players e junta tudo numa interface que não atrapalha. Sem servidor, sem conta, sem mensalidade.",
+    "p3": "É open source, feito em Python, e acaba sendo um bom campo de estudo pra quem quer entender automação web, scraping e busca aproximada na prática. Pull requests são bem-vindos.",
     "tech_title": "Stack Técnica",
-    "open_title": "Código Aberto por Design",
-    "open_desc": "Repositório público no GitHub. Qualquer um pode auditar, modificar, contribuir ou fazer fork. A ideia não é competir com plataformas — é resolver um problema real com ferramentas reais."
+    "open_title": "Código aberto",
+    "open_desc": "O repositório é público no GitHub. Qualquer um pode ler o código, abrir uma issue, mandar um PR ou fazer um fork e levar o projeto pra onde quiser."
   },
   "howto": {
     "title": "Como Usar",
@@ -133,6 +134,6 @@
   "footer": {
     "made": "Feito com ☕ por",
     "rights": "Projeto open source — MIT License",
-    "disclaimer": "Este projeto é apenas um agregador de links públicos. O conteúdo é de responsabilidade de seus respectivos proprietários."
+    "disclaimer": "Este projeto é apenas um webscraper de links públicos. O conteúdo é de responsabilidade de seus respectivos proprietários."
   }
 }

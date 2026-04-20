@@ -12,8 +12,6 @@ export const PT_HOME_DESCRIPTION =
 export const EN_HOME_TITLE = "AnimeCaos - Watch Anime Online for Free";
 export const EN_HOME_DESCRIPTION =
   "Watch dubbed and subtitled anime on AnimeCaos. The best ad-free way to stream anime online.";
-const SOCIAL_IMAGE_URL = `${SITE_URL}/icon.png`;
-
 const OPEN_GRAPH_LOCALE: Record<AppLocale, string> = {
   pt: "pt_BR",
   en: "en_US",
@@ -67,7 +65,6 @@ export function buildLocalizedMetadata({
       type: "website",
       locale: OPEN_GRAPH_LOCALE[locale],
       alternateLocale: [locale === "pt" ? OPEN_GRAPH_LOCALE.en : OPEN_GRAPH_LOCALE.pt],
-      images: [{ url: SOCIAL_IMAGE_URL, alt: SITE_NAME }],
     },
     twitter: {
       card: "summary_large_image",
@@ -75,7 +72,6 @@ export function buildLocalizedMetadata({
       creator: SITE_X_HANDLE,
       title: finalTitle,
       description,
-      images: [SOCIAL_IMAGE_URL],
     },
   };
 }

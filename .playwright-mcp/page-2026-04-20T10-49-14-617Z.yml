@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "AnimeCaos AnimeCaos" [ref=e5] [cursor=pointer]:
+          - /url: /pt
+          - img "AnimeCaos" [ref=e6]
+          - generic [ref=e7]: AnimeCaos
+        - navigation [ref=e8]:
+          - generic [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: /pt
+            - link "Sobre" [ref=e11] [cursor=pointer]:
+              - /url: /pt/about
+            - link "Download" [ref=e12] [cursor=pointer]:
+              - /url: /pt/download
+            - link "Como Usar" [ref=e13] [cursor=pointer]:
+              - /url: /pt/how-to-use
+            - link "Contato" [ref=e14] [cursor=pointer]:
+              - /url: /pt/contact
+        - generic [ref=e15]:
+          - link "en" [ref=e16] [cursor=pointer]:
+            - /url: /en/about
+          - link "GitHub" [ref=e17] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/animecaos
+            - img [ref=e18]
+            - text: GitHub
+          - link "Download" [ref=e21] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/AnimeCaos/releases/download/v0.1.3/Setup_AnimeCaos_v0.1.3.exe
+            - img [ref=e22]
+            - text: Download
+    - main [ref=e25]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - img [ref=e30]
+            - text: open source
+          - heading "Por que o AnimeCaos existe?" [level=1] [ref=e34]
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: "Quem assiste anime no Brasil sabe como é: quatro abas abertas, dez anúncios fechados, player que não carrega, episódio que some no meio da temporada."
+            - paragraph [ref=e37]: O AnimeCaos surgiu disso. Automatiza a navegação, extrai os links diretamente dos players e junta tudo numa interface que não atrapalha. Sem servidor, sem conta, sem mensalidade.
+            - paragraph [ref=e38]: É open source, feito em Python, e acaba sendo um bom campo de estudo pra quem quer entender automação web, scraping e busca aproximada na prática. Pull requests são bem-vindos.
+        - generic [ref=e39]:
+          - heading "Stack Técnica" [level=2] [ref=e40]
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - img [ref=e44]
+              - generic [ref=e47]:
+                - paragraph [ref=e48]: Python 3.10+
+                - paragraph [ref=e49]: Core language
+            - generic [ref=e50]:
+              - img [ref=e52]
+              - generic [ref=e55]:
+                - paragraph [ref=e56]: Selenium
+                - paragraph [ref=e57]: Web automation & Cloudflare bypass
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - generic [ref=e64]:
+                - paragraph [ref=e65]: BeautifulSoup
+                - paragraph [ref=e66]: HTML parsing
+            - generic [ref=e67]:
+              - img [ref=e69]
+              - generic [ref=e72]:
+                - paragraph [ref=e73]: FuzzyWuzzy
+                - paragraph [ref=e74]: Fuzzy search / typo tolerance
+            - generic [ref=e75]:
+              - img [ref=e77]
+              - generic [ref=e79]:
+                - paragraph [ref=e80]: yt-dlp + mpv
+                - paragraph [ref=e81]: Stream extraction & playback
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - generic [ref=e88]:
+                - paragraph [ref=e89]: PySide6
+                - paragraph [ref=e90]: Desktop GUI framework
+            - generic [ref=e91]:
+              - img [ref=e93]
+              - generic [ref=e97]:
+                - paragraph [ref=e98]: AniList GraphQL
+                - paragraph [ref=e99]: Metadata & cover art API
+            - generic [ref=e100]:
+              - img [ref=e102]
+              - generic [ref=e106]:
+                - paragraph [ref=e107]: PyInstaller
+                - paragraph [ref=e108]: Standalone .exe distribution
+        - heading "Changelog" [level=2] [ref=e110]:
+          - img [ref=e111]
+          - text: Changelog
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - heading "Código aberto" [level=3] [ref=e120]
+            - paragraph [ref=e121]: O repositório é público no GitHub. Qualquer um pode ler o código, abrir uma issue, mandar um PR ou fazer um fork e levar o projeto pra onde quiser.
+          - link "Ver Repositório" [ref=e122] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/animecaos
+            - text: Ver Repositório
+            - img [ref=e123]
+    - contentinfo [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - img "AnimeCaos" [ref=e132]
+              - generic [ref=e133]: AnimeCaos
+            - paragraph [ref=e134]: Projeto open source — MIT License
+          - generic [ref=e135]:
+            - paragraph [ref=e136]: Pages
+            - generic [ref=e137]:
+              - link "Home" [ref=e138] [cursor=pointer]:
+                - /url: /pt
+              - link "Sobre" [ref=e139] [cursor=pointer]:
+                - /url: /pt/about
+              - link "Download" [ref=e140] [cursor=pointer]:
+                - /url: /pt/download
+              - link "Como Usar" [ref=e141] [cursor=pointer]:
+                - /url: /pt/how-to-use
+              - link "Contato" [ref=e142] [cursor=pointer]:
+                - /url: /pt/contact
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: Links
+            - generic [ref=e145]:
+              - link "GitHub" [ref=e146] [cursor=pointer]:
+                - /url: https://github.com/henriqqw/animecaos
+                - img [ref=e147]
+              - link "Twitter" [ref=e150] [cursor=pointer]:
+                - /url: https://x.com/getanimecaos
+                - img [ref=e151]
+              - link "Discord" [ref=e153] [cursor=pointer]:
+                - /url: https://discord.com/users/chaosphory
+                - img [ref=e154]
+              - link "Instagram" [ref=e156] [cursor=pointer]:
+                - /url: https://www.instagram.com/getanimecaos/
+                - img [ref=e157]
+              - link "LinkedIn" [ref=e160] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/henrique-lanzoni-ab0828371/
+                - img [ref=e161]
+              - link "Email" [ref=e165] [cursor=pointer]:
+                - /url: mailto:lanzonicmpny13@gmail.com
+                - img [ref=e166]
+        - generic [ref=e170]:
+          - paragraph [ref=e171]:
+            - text: Feito com ☕ por
+            - link "caosdev" [ref=e172] [cursor=pointer]:
+              - /url: https://caosdev.vercel.app
+          - paragraph [ref=e173]: Este projeto é apenas um agregador de links públicos. O conteúdo é de responsabilidade de seus respectivos proprietários.
+  - button "Open Next.js Dev Tools" [ref=e179] [cursor=pointer]:
+    - img [ref=e180]

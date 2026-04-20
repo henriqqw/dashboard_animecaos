@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
           "animes dublados",
           "animes legendados",
           "app de anime",
+          "anime sem anuncios",
         ]
       : ["AnimeCaos", "watch anime", "anime download", "anime player", "free anime", "desktop anime player", "ad-free anime"],
   });

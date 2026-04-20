@@ -8,10 +8,10 @@
   },
   "hero": {
     "badge": "Open Source",
-    "headline1": "Anime.",
-    "headline2": "No ads.",
-    "headline3": "No drama.",
-    "sub": "AnimeCaos searches, extracts, and delivers links straight from the source — all in a clean player with download support.",
+    "headline1": "AnimeCaos",
+    "headline2": "Anime Streaming",
+    "headline3": "",
+    "sub": "AnimeCaos searches, extracts and delivers links straight from the source. All in a clean, fast player with download support. Also integrates with AniList!",
     "cta_download": "Download for Windows",
     "cta_github": "View on GitHub",
     "cta_version": "Latest release"
@@ -68,6 +68,7 @@
     "linux_build_label": "Build",
     "linux_run_label": "Run after build",
     "linux_note": "Requires Flatpak and build dependencies installed.",
+    "includes_title": "What's included",
     "source_title": "Install from source",
     "requirements": "System Requirements",
     "req_items": [
@@ -83,12 +84,12 @@
   },
   "about": {
     "title": "Why does AnimeCaos exist?",
-    "p1": "Anyone who watches anime knows the ritual: open four sites, close ten ads, hope the player loads, search for the right episode through poorly organized pages.",
-    "p2": "AnimeCaos fixes that. It does the dirty work behind the scenes — automates navigation, extracts real player links, and delivers everything inside a clean interface. No server. No subscription. Local-first.",
-    "p3": "It's open source, built in Python, and works as a practical lab for web automation, scraping, and fuzzy search. Contributions are welcome.",
+    "p1": "Anyone who watches anime knows how it goes: four tabs open, ten ads closed, a player that won't load, an episode that disappears mid-season.",
+    "p2": "AnimeCaos came out of that. It automates the navigation, extracts links directly from the players, and puts everything into an interface that stays out of the way. No server, no account, no subscription.",
+    "p3": "It's open source, built in Python, and ends up being a decent place to learn web automation, scraping, and fuzzy search in practice. Pull requests are welcome.",
     "tech_title": "Tech Stack",
-    "open_title": "Open Source by Design",
-    "open_desc": "Public repository on GitHub. Anyone can audit, modify, contribute, or fork. The goal isn't to compete with platforms — it's to solve a real problem with real tools."
+    "open_title": "Open source",
+    "open_desc": "The repository is public on GitHub. Anyone can read the code, open an issue, send a PR, or fork the project and take it wherever they want."
   },
   "howto": {
     "title": "How to Use",
@@ -133,6 +134,6 @@
   "footer": {
     "made": "Made with ☕ by",
     "rights": "Open source project — MIT License",
-    "disclaimer": "This project is only a public link aggregator. Content is the responsibility of its respective original owners."
+    "disclaimer": "This project is only a public link webscraper. Content is the responsibility of its respective original owners."
   }
 }

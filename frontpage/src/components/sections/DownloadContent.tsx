@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Download, Github, Terminal, Monitor, Package, Check, Copy } from "lucide-react";
+import { Download, Github, Terminal, Monitor, Package, Check, Copy, Play, HardDrive, Zap, Database } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useRelease } from "@/lib/release/context";
 
@@ -13,6 +13,19 @@ chmod +x build-flatpak.sh
 
 const LINUX_RUN = `flatpak run com.animecaos.App`;
 
+const WINDOWS_SPECS = [
+    { label: "~90MB" },
+    { label: "Windows 10/11" },
+    { label: "Standalone" },
+];
+
+const WINDOWS_INCLUDES = [
+    { icon: Play, text: "Player mpv integrado" },
+    { icon: HardDrive, text: "yt-dlp para downloads offline" },
+    { icon: Database, text: "Integração com AniList" },
+    { icon: Zap, text: "Busca em 3+ fontes brasileiras" },
+];
+
 const SOURCE_COMMANDS = `# Clone e instale
 git clone https://github.com/henriqqw/animecaos.git
 cd animecaos
@@ -21,12 +34,6 @@ venv\\Scripts\\activate
 pip install -r requirements.txt
 python main.py`;
 
-const CHANGELOG = [
-    "Painel de Controle com integração AniList (capas + sinopses PT-BR)",
-    "Download nativo via yt-dlp com progresso em tempo real",
-    "Auto-Play: avança automaticamente para o próximo episódio",
-    "Interface Glassmorphism com PySide6",
-];
 
 function FirefoxGlyph({ size = 14 }: { size?: number }) {
     return (
@@ -122,6 +129,7 @@ export default function DownloadContent() {
                         className="liquid-glass"
                         style={{ padding: "2.5rem", display: "flex", flexDirection: "column", gap: "1.5rem" }}
                     >
+                        {/* Header */}
                         <div>
                             <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "0.5rem" }}>
                                 <div className="feature-icon" style={{ width: 28, height: 28, margin: 0, flexShrink: 0 }}>
@@ -137,6 +145,54 @@ export default function DownloadContent() {
                             <p style={{ color: "var(--text-muted)", fontSize: "0.9rem" }}>{t("sub")}</p>
                         </div>
 
+                        {/* Specs row */}
+                        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                            {WINDOWS_SPECS.map((s) => (
+                                <span
+                                    key={s.label}
+                                    style={{
+                                        fontSize: "0.75rem",
+                                        fontWeight: 600,
+                                        color: "var(--text-subtle)",
+                                        background: "rgba(255,255,255,0.06)",
+                                        border: "1px solid var(--border)",
+                                        borderRadius: "999px",
+                                        padding: "0.25rem 0.75rem",
+                                    }}
+                                >
+                                    {s.label}
+                                </span>
+                            ))}
+                        </div>
+
+                        {/* Changelog (dinâmico) ou fallback estático */}
+                        <div style={{ borderTop: "1px solid var(--border)", paddingTop: "1.25rem" }}>
+                            <p style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--text-subtle)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.9rem" }}>
+                                {release.changelog.length > 0 ? `${release.tag} changelog` : t("includes_title")}
+                            </p>
+                            <ul style={{ display: "flex", flexDirection: "column", gap: "0.6rem", listStyle: "none" }}>
+                                {release.changelog.length > 0
+                                    ? release.changelog.map((item) => (
+                                        <li key={item} style={{ display: "flex", gap: "0.5rem", fontSize: "0.875rem", color: "var(--text-muted)" }}>
+                                            <span style={{ color: "var(--accent)", flexShrink: 0, display: "inline-flex", alignItems: "center", paddingTop: "0.15rem" }}>
+                                                <Check size={13} />
+                                            </span>
+                                            {item}
+                                        </li>
+                                    ))
+                                    : WINDOWS_INCLUDES.map(({ icon: Icon, text }) => (
+                                        <li key={text} style={{ display: "flex", alignItems: "center", gap: "0.65rem" }}>
+                                            <div className="feature-icon" style={{ width: 28, height: 28, margin: 0, flexShrink: 0 }}>
+                                                <Icon size={13} />
+                                            </div>
+                                            <span style={{ fontSize: "0.875rem", color: "var(--text-muted)" }}>{text}</span>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+
+                        {/* CTA */}
                         <a
                             href={release.windows_url ?? ""}
                             id="download-exe-btn"
@@ -144,43 +200,39 @@ export default function DownloadContent() {
                             data-umami-event="download_click"
                             data-umami-event-channel="download_page"
                             className="btn btn-primary"
-                            style={{ fontSize: "1rem", padding: "0.9rem 1.5rem", justifyContent: "center" }}
+                            style={{ fontSize: "1rem", padding: "0.9rem 1.5rem", justifyContent: "center", marginTop: "auto" }}
                         >
                             <Download size={18} />
                             {t("btn")}
                         </a>
 
+                        {/* Warning */}
                         <div
                             style={{
-                                fontSize: "0.85rem",
-                                color: "var(--text)",
-                                background: "rgba(230, 63, 63, 0.15)",
-                                border: "1px solid rgba(230, 63, 63, 0.3)",
-                                padding: "0.85rem 1.25rem",
+                                fontSize: "0.82rem",
+                                color: "var(--text-muted)",
+                                background: "rgba(230, 63, 63, 0.1)",
+                                border: "1px solid rgba(230, 63, 63, 0.25)",
+                                padding: "0.75rem 1rem",
                                 borderRadius: "var(--radius)",
                                 fontWeight: 500,
-                                textAlign: "center"
+                                textAlign: "center",
                             }}
                         >
                             {t("note")}
                         </div>
 
-                        {/* Changelog */}
-                        <div style={{ borderTop: "1px solid var(--border)", paddingTop: "1.25rem" }}>
-                            <p style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-subtle)", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.75rem" }}>
-                                {release.tag} changelog
-                            </p>
-                            <ul style={{ display: "flex", flexDirection: "column", gap: "0.5rem", listStyle: "none" }}>
-                                {CHANGELOG.map((item, i) => (
-                                    <li key={i} style={{ display: "flex", gap: "0.5rem", fontSize: "0.85rem", color: "var(--text-muted)" }}>
-                                        <span style={{ color: "var(--accent)", flexShrink: 0, display: "inline-flex", alignItems: "center" }}>
-                                            <Check size={14} />
-                                        </span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                        {/* Secondary */}
+                        <a
+                            href="https://github.com/henriqqw/AnimeCaos"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-ghost"
+                            style={{ fontSize: "0.875rem", justifyContent: "center" }}
+                        >
+                            <Github size={15} />
+                            Ver no GitHub
+                        </a>
                     </motion.div>
 
                     {/* Linux card */}

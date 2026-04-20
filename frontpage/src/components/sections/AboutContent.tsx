@@ -6,6 +6,7 @@ import {
     GitBranch, ExternalLink
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import ChangelogSection from "@/components/sections/ChangelogSection";
 
 const TECH = [
     { icon: Cpu, name: "Python 3.10+", desc: "Core language" },
@@ -112,6 +113,17 @@ export default function AboutContent() {
                             </motion.div>
                         ))}
                     </div>
+                </motion.div>
+
+                {/* Changelog */}
+                <motion.div
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    style={{ marginBottom: "4rem" }}
+                >
+                    <ChangelogSection />
                 </motion.div>
 
                 {/* Open source */}

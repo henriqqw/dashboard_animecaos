@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const revalidate = 3600;
+export const revalidate = 300;
 
 interface GithubAsset {
   name: string;
@@ -11,6 +11,8 @@ interface GithubAsset {
 interface GithubRelease {
   tag_name: string;
   prerelease: boolean;
+  published_at: string;
+  body: string | null;
   assets: GithubAsset[];
 }
 
@@ -18,19 +20,47 @@ export interface LatestRelease {
   tag: string;
   version: string;
   windows_url: string | null;
+  changelog: string[];
+}
+
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "$1")
+    .replace(/\*(.+?)\*/g, "$1")
+    .replace(/_(.+?)_/g, "$1")
+    .replace(/`(.+?)`/g, "$1")
+    .replace(/\[(.+?)\]\(.+?\)/g, "$1")
+    .replace(/[\u{1F300}-\u{1FFFF}]/gu, "")
+    .trim();
+}
+
+function parseChangelog(body: string | null): string[] {
+  if (!body) return [];
+  return body
+    .split("\n")
+    .filter((l) => /^\s*[-*]\s+/.test(l))
+    .map((l) => stripMarkdown(l.replace(/^\s*[-*]\s+/, "")))
+    .filter(Boolean);
+}
+
+export interface ReleaseChangelog {
+  tag: string;
+  date: string;
+  items: string[];
 }
 
 export interface DownloadsResponse {
   total: number;
   releases: { tag: string; count: number }[];
   latest: LatestRelease | null;
+  changelogs: ReleaseChangelog[];
   cached_at: string;
 }
 
 export async function GET() {
   const res = await fetch("https://api.github.com/repos/henriqqw/AnimeCaos/releases", {
     headers: { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" },
-    next: { revalidate: 3600 },
+    next: { revalidate: 300 },
   });
 
   if (!res.ok) {
@@ -43,6 +73,7 @@ export async function GET() {
     total: 0,
     releases: [],
     latest: null,
+    changelogs: [],
     cached_at: new Date().toISOString(),
   };
 
@@ -51,13 +82,20 @@ export async function GET() {
     data.total += count;
     data.releases.push({ tag: rel.tag_name, count });
 
-    if (!data.latest && !rel.prerelease) {
-      const exe = rel.assets.find((a) => a.name.endsWith(".exe"));
-      data.latest = {
-        tag: rel.tag_name,
-        version: rel.tag_name.replace(/^v/, ""),
-        windows_url: exe?.browser_download_url ?? null,
-      };
+    if (!rel.prerelease) {
+      const items = parseChangelog(rel.body);
+      if (items.length > 0) {
+        data.changelogs.push({ tag: rel.tag_name, date: rel.published_at, items });
+      }
+      if (!data.latest) {
+        const exe = rel.assets.find((a) => a.name.endsWith(".exe"));
+        data.latest = {
+          tag: rel.tag_name,
+          version: rel.tag_name.replace(/^v/, ""),
+          windows_url: exe?.browser_download_url ?? null,
+          changelog: items,
+        };
+      }
     }
   }
 

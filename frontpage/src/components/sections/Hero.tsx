@@ -420,15 +420,17 @@ export default function Hero({ locale }: HeroProps) {
                                 radius={120}
                                 falloff="linear"
                             />
-                            <VariableProximity
-                                label={headline3}
-                                className="hero-variable-line hero-variable-line-main"
-                                fromFontVariationSettings="'wght' 760, 'opsz' 20"
-                                toFontVariationSettings="'wght' 980, 'opsz' 48"
-                                containerRef={variableProximityContainerRef}
-                                radius={120}
-                                falloff="linear"
-                            />
+                            {headline3 && (
+                                <VariableProximity
+                                    label={headline3}
+                                    className="hero-variable-line hero-variable-line-main"
+                                    fromFontVariationSettings="'wght' 760, 'opsz' 20"
+                                    toFontVariationSettings="'wght' 980, 'opsz' 48"
+                                    containerRef={variableProximityContainerRef}
+                                    radius={120}
+                                    falloff="linear"
+                                />
+                            )}
                         </div>
                     </motion.h1>
 

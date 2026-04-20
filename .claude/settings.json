@@ -1,7 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s http://localhost:3333/sitemap.xml)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /tmp/sitemap_out.txt -w \"%{http_code}\" http://localhost:3333/sitemap.xml)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /tmp/sitemap_out.txt -w \"HTTP_STATUS:%{http_code}\" http://localhost:3333/sitemap.xml)",
+      "Bash(curl -s http://localhost:3333/robots.txt)",
+      "Bash(curl -sI http://localhost:3333/sitemap.xml)",
+      "Bash(curl -sI http://localhost:3333/)",
+      "Bash(curl -s http://localhost:3333/pt)",
+      "Bash(curl -s http://localhost:3333__TRACKED_VAR__)",
+      "Bash(curl -sI http://localhost:3333/icon.png)",
+      "Bash(python3 -c \" import sys, re, json html = sys.stdin.read\\(\\) jsons = re.findall\\(r'<script type=\\\\\"application/ld\\\\+json\\\\\">\\(.*?\\)</script>', html, re.DOTALL\\) types = [] for j in jsons: try: p = json.loads\\(j\\) if '@type' in p: types.append\\(p['@type']\\) elif '@graph' in p: types.extend\\([x.get\\('@type'\\) for x in p['@graph']]\\) except: pass print\\('All schema types:', types\\) from collections import Counter dupes = [t for t,c in Counter\\(types\\).items\\(\\) if c > 1] print\\('Duplicates:', dupes if dupes else 'none'\\) \")",
+      "Bash(curl -s -o /dev/null -w \"server: %{http_code}\" http://localhost:3333/pt)",
+      "Bash(rm -f \"c:/Users/henri/animecaos_front/frontpage/.next/dev/lock\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3333/pt/about)",
+      "Read(//c/Users/henri/.claude/projects/c--Users-henri-animecaos-front/dc16630e-6d1a-4e78-af45-19657cf47492/tasks/**)",
+      "Bash(curl -s http://localhost:3333/api/github-downloads)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('changelogs:', len\\(d.get\\('changelogs',[]\\)\\), [c['tag'] for c in d.get\\('changelogs',[]\\)]\\)\")",
+      "Bash(curl -s http://localhost:3333/pt/about)"
     ]
   }
 }

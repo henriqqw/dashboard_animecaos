@@ -35,7 +35,6 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/pt`,
     siteName: SITE_NAME,
     type: "website",
-    images: [{ url: `${SITE_URL}/icon.png`, alt: SITE_NAME }],
   },
   twitter: {
     card: "summary_large_image",
@@ -43,19 +42,10 @@ export const metadata: Metadata = {
     creator: SITE_X_HANDLE,
     title: PT_HOME_TITLE,
     description: PT_HOME_DESCRIPTION,
-    images: [`${SITE_URL}/icon.png`],
   },
   verification: {
     google: "jWtvjWsVOFaDn8KdIc4PV5dvtiX_6GwTVNvy3xJ75WQ",
   },
-};
-
-const websiteJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: SITE_NAME,
-  url: SITE_URL,
-  description: PT_HOME_DESCRIPTION,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -65,10 +55,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script defer src="https://umami-rose-chi.vercel.app/script.js" data-website-id="c82f21ea-7dea-4338-bd1e-579eeb0686f9" />
       </head>
       <body>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
         {children}
         <Suspense fallback={null}>
           <FirstPartyTracker />

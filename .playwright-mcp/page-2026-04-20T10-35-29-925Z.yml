@@ -1,0 +1,198 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "AnimeCaos AnimeCaos" [ref=e5] [cursor=pointer]:
+          - /url: /pt
+          - img "AnimeCaos" [ref=e6]
+          - generic [ref=e7]: AnimeCaos
+        - navigation [ref=e8]:
+          - generic [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: /pt
+            - link "Sobre" [ref=e11] [cursor=pointer]:
+              - /url: /pt/about
+            - link "Download" [ref=e12] [cursor=pointer]:
+              - /url: /pt/download
+            - link "Como Usar" [ref=e13] [cursor=pointer]:
+              - /url: /pt/how-to-use
+            - link "Contato" [ref=e14] [cursor=pointer]:
+              - /url: /pt/contact
+        - generic [ref=e15]:
+          - link "en" [ref=e16] [cursor=pointer]:
+            - /url: /en/download
+          - link "GitHub" [ref=e17] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/animecaos
+            - img [ref=e18]
+            - text: GitHub
+          - link "Download" [ref=e21] [cursor=pointer]:
+            - /url: https://github.com/henriqqw/AnimeCaos/releases/download/v0.1.3/Setup_AnimeCaos_v0.1.3.exe
+            - img [ref=e22]
+            - text: Download
+    - main [ref=e25]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - img [ref=e30]
+            - text: Versão v0.1.3
+          - heading "Pronto para começar?" [level=1] [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - img [ref=e39]
+                - generic [ref=e41]: Windows
+              - heading "AnimeCaos.exe" [level=2] [ref=e42]
+              - paragraph [ref=e43]: Um arquivo .exe direto. Requer Mozilla Firefox.
+            - generic [ref=e44]:
+              - generic [ref=e45]: ~90MB
+              - generic [ref=e46]: Windows 10/11
+              - generic [ref=e47]: Standalone
+            - generic [ref=e48]:
+              - paragraph [ref=e49]: O que vem no pacote
+              - list [ref=e50]:
+                - listitem [ref=e51]:
+                  - img [ref=e53]
+                  - generic [ref=e55]: Player mpv integrado
+                - listitem [ref=e56]:
+                  - img [ref=e58]
+                  - generic [ref=e60]: yt-dlp para downloads offline
+                - listitem [ref=e61]:
+                  - img [ref=e63]
+                  - generic [ref=e67]: Integração com AniList
+                - listitem [ref=e68]:
+                  - img [ref=e70]
+                  - generic [ref=e72]: Busca em 3+ fontes brasileiras
+            - link "Baixar Arquivo .EXE" [ref=e73] [cursor=pointer]:
+              - /url: https://github.com/henriqqw/AnimeCaos/releases/download/v0.1.3/Setup_AnimeCaos_v0.1.3.exe
+              - img [ref=e74]
+              - text: Baixar Arquivo .EXE
+            - generic [ref=e77]: "Requer Windows 10/11 • ⚠️ OBRIGATÓRIO: Você precisa ter o navegador Mozilla Firefox instalado."
+            - link "Ver no GitHub" [ref=e78] [cursor=pointer]:
+              - /url: https://github.com/henriqqw/AnimeCaos
+              - img [ref=e79]
+              - text: Ver no GitHub
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - img [ref=e86]
+                - generic [ref=e92]: Linux
+              - heading "AnimeCaos Flatpak" [level=2] [ref=e93]
+              - paragraph [ref=e94]: Build e instale via Flatpak direto do source.
+            - generic [ref=e95]:
+              - generic [ref=e96]:
+                - paragraph [ref=e97]: Build
+                - button "Copiar" [ref=e98] [cursor=pointer]:
+                  - img [ref=e99]
+                  - text: Copiar
+              - generic [ref=e102]:
+                - generic [ref=e103]: git clone https://github.com/henriqqw/AnimeCaos.git
+                - generic [ref=e104]: cd AnimeCaos
+                - generic [ref=e105]: chmod +x build-flatpak.sh
+                - generic [ref=e106]: ./build-flatpak.sh
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - paragraph [ref=e109]: Executar após o build
+                - button "Copiar" [ref=e110] [cursor=pointer]:
+                  - img [ref=e111]
+                  - text: Copiar
+              - generic [ref=e115]: flatpak run com.animecaos.App
+            - generic [ref=e116]: Requer Flatpak e dependências de build instaladas.
+            - link "Ver no GitHub" [ref=e117] [cursor=pointer]:
+              - /url: https://github.com/henriqqw/AnimeCaos
+              - img [ref=e118]
+              - text: Ver no GitHub
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - heading "Requisitos do Sistema" [level=3] [ref=e123]
+            - paragraph [ref=e124]: Windows
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - img [ref=e128]
+                - paragraph [ref=e130]: Windows 10/11 64-bit
+              - generic [ref=e131]:
+                - img [ref=e133]
+                - paragraph [ref=e137]: Mozilla Firefox
+              - generic [ref=e138]:
+                - img [ref=e140]
+                - paragraph [ref=e142]: Python 3.10+ (só para source)
+            - generic [ref=e143]:
+              - paragraph [ref=e144]: Linux
+              - generic [ref=e145]:
+                - generic [ref=e146]:
+                  - img [ref=e148]
+                  - paragraph [ref=e154]: Ubuntu 20.04+ / Fedora 38+ / Arch
+                - generic [ref=e155]:
+                  - img [ref=e157]
+                  - paragraph [ref=e161]: Flatpak instalado
+                - generic [ref=e162]:
+                  - img [ref=e164]
+                  - paragraph [ref=e166]: Python 3.10+ e dependências de build
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - heading "Instalar pelo source" [level=3] [ref=e169]
+              - button "Copiar comandos" [ref=e170] [cursor=pointer]:
+                - img [ref=e171]
+                - text: Copiar comandos
+            - generic [ref=e174]:
+              - generic [ref=e175]: "# Clone e instale"
+              - generic [ref=e176]: git clone https://github.com/henriqqw/animecaos.git
+              - generic [ref=e177]: cd animecaos
+              - generic [ref=e178]: python -m venv venv
+              - generic [ref=e179]: venv\Scripts\activate
+              - generic [ref=e180]: pip install -r requirements.txt
+              - generic [ref=e181]: python main.py
+            - link "Ver no GitHub" [ref=e182] [cursor=pointer]:
+              - /url: https://github.com/henriqqw/animecaos
+              - img [ref=e183]
+              - text: Ver no GitHub
+    - contentinfo [ref=e186]:
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - generic [ref=e190]:
+              - img "AnimeCaos" [ref=e191]
+              - generic [ref=e192]: AnimeCaos
+            - paragraph [ref=e193]: Projeto open source — MIT License
+          - generic [ref=e194]:
+            - paragraph [ref=e195]: Pages
+            - generic [ref=e196]:
+              - link "Home" [ref=e197] [cursor=pointer]:
+                - /url: /pt
+              - link "Sobre" [ref=e198] [cursor=pointer]:
+                - /url: /pt/about
+              - link "Download" [ref=e199] [cursor=pointer]:
+                - /url: /pt/download
+              - link "Como Usar" [ref=e200] [cursor=pointer]:
+                - /url: /pt/how-to-use
+              - link "Contato" [ref=e201] [cursor=pointer]:
+                - /url: /pt/contact
+          - generic [ref=e202]:
+            - paragraph [ref=e203]: Links
+            - generic [ref=e204]:
+              - link "GitHub" [ref=e205] [cursor=pointer]:
+                - /url: https://github.com/henriqqw/animecaos
+                - img [ref=e206]
+              - link "Twitter" [ref=e209] [cursor=pointer]:
+                - /url: https://x.com/getanimecaos
+                - img [ref=e210]
+              - link "Discord" [ref=e212] [cursor=pointer]:
+                - /url: https://discord.com/users/chaosphory
+                - img [ref=e213]
+              - link "Instagram" [ref=e215] [cursor=pointer]:
+                - /url: https://www.instagram.com/getanimecaos/
+                - img [ref=e216]
+              - link "LinkedIn" [ref=e219] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/henrique-lanzoni-ab0828371/
+                - img [ref=e220]
+              - link "Email" [ref=e224] [cursor=pointer]:
+                - /url: mailto:lanzonicmpny13@gmail.com
+                - img [ref=e225]
+        - generic [ref=e229]:
+          - paragraph [ref=e230]:
+            - text: Feito com ☕ por
+            - link "caosdev" [ref=e231] [cursor=pointer]:
+              - /url: https://caosdev.vercel.app
+          - paragraph [ref=e232]: Este projeto é apenas um agregador de links públicos. O conteúdo é de responsabilidade de seus respectivos proprietários.
+  - button "Open Next.js Dev Tools" [ref=e238] [cursor=pointer]:
+    - img [ref=e239]

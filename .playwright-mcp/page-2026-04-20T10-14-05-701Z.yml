@@ -1,0 +1,359 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "AnimeCaos AnimeCaos" [ref=e5] [cursor=pointer]:
+        - /url: /pt
+        - img "AnimeCaos" [ref=e6]
+        - generic [ref=e7]: AnimeCaos
+      - navigation [ref=e8]:
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /pt
+          - link "Sobre" [ref=e11] [cursor=pointer]:
+            - /url: /pt/about
+          - link "Download" [ref=e12] [cursor=pointer]:
+            - /url: /pt/download
+          - link "Como Usar" [ref=e13] [cursor=pointer]:
+            - /url: /pt/how-to-use
+          - link "Contato" [ref=e14] [cursor=pointer]:
+            - /url: /pt/contact
+      - generic [ref=e15]:
+        - link "en" [ref=e16] [cursor=pointer]:
+          - /url: /en
+        - link "GitHub" [ref=e17] [cursor=pointer]:
+          - /url: https://github.com/henriqqw/animecaos
+          - img [ref=e18]
+          - text: GitHub
+        - link "Download" [ref=e21] [cursor=pointer]:
+          - /url: https://github.com/henriqqw/AnimeCaos/releases/download/v0.1.3/Setup_AnimeCaos_v0.1.3.exe
+          - img [ref=e22]
+          - text: Download
+  - main [ref=e25]:
+    - generic [ref=e28]:
+      - heading "Anime. Sem anúncio. Sem drama." [level=1] [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - generic [ref=e33]: A
+              - generic [ref=e34]: "n"
+              - generic [ref=e35]: i
+              - generic [ref=e36]: m
+              - generic [ref=e37]: e
+              - generic [ref=e38]: .
+            - generic [ref=e39]: Anime.
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]: S
+              - generic [ref=e43]: e
+              - generic [ref=e44]: m
+            - generic [ref=e46]:
+              - generic [ref=e47]: a
+              - generic [ref=e48]: "n"
+              - generic [ref=e49]: ú
+              - generic [ref=e50]: "n"
+              - generic [ref=e51]: c
+              - generic [ref=e52]: i
+              - generic [ref=e53]: o
+              - generic [ref=e54]: .
+            - generic [ref=e55]: Sem anúncio.
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: S
+              - generic [ref=e59]: e
+              - generic [ref=e60]: m
+            - generic [ref=e62]:
+              - generic [ref=e63]: d
+              - generic [ref=e64]: r
+              - generic [ref=e65]: a
+              - generic [ref=e66]: m
+              - generic [ref=e67]: a
+              - generic [ref=e68]: .
+            - generic [ref=e69]: Sem drama.
+      - paragraph [ref=e70]: O AnimeCaos busca, extrai e entrega os links direto da fonte — tudo em um player limpo, rápido e com suporte a download.
+      - generic [ref=e71]:
+        - link "Baixar para Windows" [ref=e72] [cursor=pointer]:
+          - /url: https://github.com/henriqqw/AnimeCaos/releases/download/v0.1.3/Setup_AnimeCaos_v0.1.3.exe
+          - img [ref=e73]
+          - text: Baixar para Windows
+        - link "Ver no GitHub" [ref=e76] [cursor=pointer]:
+          - /url: https://github.com/henriqqw/animecaos
+          - img [ref=e77]
+          - text: Ver no GitHub
+      - link "v0.1.3 — Última versão" [ref=e81] [cursor=pointer]:
+        - /url: /pt/download
+        - text: v0.1.3 — Última versão
+        - img [ref=e82]
+      - generic [ref=e85]:
+        - generic [ref=e91]:
+          - button "Minimizar janela" [ref=e92] [cursor=pointer]: "-"
+          - button "Fechar janela" [ref=e93] [cursor=pointer]: x
+        - generic [ref=e95]: "|"
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - heading "Tudo que você precisa. Nada que você não precisa." [level=2] [ref=e104]
+        - paragraph [ref=e105]: Construído para quem realmente vive o anime.
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e110]: HUB
+            - img [ref=e112]
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - img [ref=e118]
+              - generic [ref=e121]: attack on titan
+              - generic [ref=e122]: "|"
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - img [ref=e125]
+                - generic [ref=e127]: 87 episódios
+              - generic [ref=e128]: HD
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - img [ref=e131]
+                - generic [ref=e133]: Legendado PT
+              - generic [ref=e134]: ✓
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - img [ref=e137]
+                - generic [ref=e139]: Dublado PT
+              - generic [ref=e140]: ✓
+          - generic [ref=e141]:
+            - heading "Hub Inteligente" [level=3] [ref=e142]
+            - paragraph [ref=e143]: Pesquisa unificada em múltiplas fontes brasileiras num comando só.
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]: PLAYER
+            - img [ref=e148]
+          - generic [ref=e151]:
+            - generic [ref=e154]:
+              - generic [ref=e155]: 12:34
+              - generic [ref=e156]: 24:00
+            - generic [ref=e157]:
+              - img [ref=e158] [cursor=pointer]
+              - img [ref=e161]
+              - img [ref=e164] [cursor=pointer]
+          - generic [ref=e166]:
+            - heading "Player Limpo" [level=3] [ref=e167]
+            - paragraph [ref=e168]: Reprodução via mpv — leve, sem anúncio, sem popup, sem lentidão.
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e171]: DOWNLOAD
+            - img [ref=e173]
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - img [ref=e179]
+              - generic [ref=e182]: shingeki_s4_ep28.mp4
+            - generic [ref=e185]:
+              - generic [ref=e186]: 72 MB / 90 MB
+              - generic [ref=e187]: 80%
+          - generic [ref=e188]:
+            - heading "Download Offline" [level=3] [ref=e189]
+            - paragraph [ref=e190]: Baixe qualquer episódio em segundo plano com progresso em tempo real via yt-dlp.
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - generic [ref=e193]: STANDALONE
+            - img [ref=e195]
+          - generic [ref=e200]:
+            - generic [ref=e201]:
+              - img [ref=e202]
+              - generic [ref=e204]: Python não necessário
+            - generic [ref=e205]:
+              - img [ref=e206]
+              - generic [ref=e208]: Requer apenas Firefox
+            - generic [ref=e209]:
+              - img [ref=e210]
+              - generic [ref=e212]: Instala, abre e funciona
+          - generic [ref=e213]:
+            - heading "Standalone" [level=3] [ref=e214]
+            - paragraph [ref=e215]: Um .exe que já traz tudo embutido. Instala, abre, assiste.
+        - generic [ref=e216]:
+          - generic [ref=e217]:
+            - generic [ref=e218]: ANILIST
+            - img [ref=e220]
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - img [ref=e227]
+              - generic [ref=e231]:
+                - paragraph [ref=e232]: usuário
+                - generic [ref=e235]: Conectado ao AniList
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - paragraph [ref=e238]: "87"
+                - paragraph [ref=e239]: Animes
+              - generic [ref=e240]:
+                - paragraph [ref=e241]: 1.2k
+                - paragraph [ref=e242]: Episódios
+              - generic [ref=e243]:
+                - paragraph [ref=e244]: 340h
+                - paragraph [ref=e245]: Tempo
+            - paragraph [ref=e246]: Sincronizado automaticamente
+          - generic [ref=e247]:
+            - heading "AniList Tracker" [level=3] [ref=e248]
+            - paragraph [ref=e249]: Sincronize seu progresso, marque episódios assistidos e atualize sua lista diretamente pelo app.
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - generic [ref=e252]: AUTO-PLAY
+            - img [ref=e254]
+          - generic [ref=e257]:
+            - generic [ref=e258]:
+              - img [ref=e260]
+              - generic [ref=e263]:
+                - paragraph [ref=e264]: Episódio 05
+                - paragraph [ref=e265]: Attack on Titan · S1
+              - generic [ref=e266]: A seguir
+            - generic [ref=e270]:
+              - generic [ref=e271]: Reproduzindo em
+              - generic [ref=e272]: 5s
+            - generic [ref=e273]:
+              - img [ref=e274] [cursor=pointer]
+              - img [ref=e277] [cursor=pointer]
+              - img [ref=e280] [cursor=pointer]
+          - generic [ref=e282]:
+            - heading "Auto-Play" [level=3] [ref=e283]
+            - paragraph [ref=e284]: Detecta o fim do episódio e já abre o próximo automaticamente. Assista quantos quiser sem parar.
+    - generic [ref=e288]:
+      - generic [ref=e289]:
+        - generic [ref=e291]: 0+
+        - paragraph [ref=e292]: Fontes BR
+      - generic [ref=e293]:
+        - generic [ref=e294]: "0"
+        - paragraph [ref=e295]: Zero Anúncios
+      - generic [ref=e296]:
+        - generic [ref=e298]: ~0MB
+        - paragraph [ref=e299]: Executável
+      - generic [ref=e300]:
+        - generic [ref=e302]: 0%
+        - paragraph [ref=e303]: Open Source
+      - generic [ref=e304]:
+        - generic [ref=e305]: —
+        - paragraph [ref=e306]: Downloads
+    - generic [ref=e309]:
+      - generic [ref=e310]:
+        - paragraph [ref=e311]: Preview
+        - heading "Veja o app em ação" [level=2] [ref=e312]
+      - generic [ref=e315]:
+        - article [ref=e316]:
+          - generic [ref=e317]:
+            - generic [ref=e318]:
+              - generic: AnimeCaos - Biblioteca
+            - img "AnimeCaos - tela principal do app" [ref=e324]
+        - article [ref=e325]:
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - generic: AnimeCaos - Busca
+            - img "AnimeCaos - busca com capas dinamicas" [ref=e333]
+        - article [ref=e334]:
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - generic: AnimeCaos - Detalhes
+            - img "AnimeCaos - detalhes do anime e episodios" [ref=e342]
+        - article [ref=e343]:
+          - generic [ref=e344]:
+            - generic [ref=e345]:
+              - generic: AnimeCaos - Player
+            - img "AnimeCaos - player integrado" [ref=e351]
+        - article [ref=e352]:
+          - generic [ref=e353]:
+            - generic [ref=e354]:
+              - generic: AnimeCaos - Player & Biblioteca
+            - img "AnimeCaos - player e biblioteca lado a lado" [ref=e360]
+        - article [ref=e361]:
+          - generic [ref=e362]:
+            - generic [ref=e363]:
+              - generic: AnimeCaos - Interface
+            - img "AnimeCaos - interface completa" [ref=e369]
+        - article [ref=e370]:
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - generic: AnimeCaos - Biblioteca
+            - img "AnimeCaos - tela principal do app" [ref=e378]
+        - article [ref=e379]:
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - generic: AnimeCaos - Busca
+            - img "AnimeCaos - busca com capas dinamicas" [ref=e387]
+        - article [ref=e388]:
+          - generic [ref=e389]:
+            - generic [ref=e390]:
+              - generic: AnimeCaos - Detalhes
+            - img "AnimeCaos - detalhes do anime e episodios" [ref=e396]
+        - article [ref=e397]:
+          - generic [ref=e398]:
+            - generic [ref=e399]:
+              - generic: AnimeCaos - Player
+            - img "AnimeCaos - player integrado" [ref=e405]
+        - article [ref=e406]:
+          - generic [ref=e407]:
+            - generic [ref=e408]:
+              - generic: AnimeCaos - Player & Biblioteca
+            - img "AnimeCaos - player e biblioteca lado a lado" [ref=e414]
+        - article [ref=e415]:
+          - generic [ref=e416]:
+            - generic [ref=e417]:
+              - generic: AnimeCaos - Interface
+            - img "AnimeCaos - interface completa" [ref=e423]
+    - generic [ref=e426]:
+      - generic [ref=e427]:
+        - img [ref=e428]
+        - text: Versão v0.1.3
+      - heading "Pronto para começar?" [level=2] [ref=e431]
+      - paragraph [ref=e432]: Um arquivo .exe direto. Requer Mozilla Firefox.
+      - generic [ref=e433]:
+        - link "Baixar Arquivo .EXE" [ref=e434] [cursor=pointer]:
+          - /url: https://github.com/henriqqw/AnimeCaos/releases/download/v0.1.3/Setup_AnimeCaos_v0.1.3.exe
+          - img [ref=e435]
+          - text: Baixar Arquivo .EXE
+        - link "GitHub" [ref=e438] [cursor=pointer]:
+          - /url: https://github.com/henriqqw/animecaos
+          - img [ref=e439]
+          - text: GitHub
+          - img [ref=e442]
+      - paragraph [ref=e444]: "Requer Windows 10/11 • ⚠️ OBRIGATÓRIO: Você precisa ter o navegador Mozilla Firefox instalado."
+  - contentinfo [ref=e446]:
+    - generic [ref=e447]:
+      - generic [ref=e448]:
+        - generic [ref=e449]:
+          - generic [ref=e450]:
+            - img "AnimeCaos" [ref=e451]
+            - generic [ref=e452]: AnimeCaos
+          - paragraph [ref=e453]: Projeto open source — MIT License
+        - generic [ref=e454]:
+          - paragraph [ref=e455]: Pages
+          - generic [ref=e456]:
+            - link "Home" [ref=e457] [cursor=pointer]:
+              - /url: /pt
+            - link "Sobre" [ref=e458] [cursor=pointer]:
+              - /url: /pt/about
+            - link "Download" [ref=e459] [cursor=pointer]:
+              - /url: /pt/download
+            - link "Como Usar" [ref=e460] [cursor=pointer]:
+              - /url: /pt/how-to-use
+            - link "Contato" [ref=e461] [cursor=pointer]:
+              - /url: /pt/contact
+        - generic [ref=e462]:
+          - paragraph [ref=e463]: Links
+          - generic [ref=e464]:
+            - link "GitHub" [ref=e465] [cursor=pointer]:
+              - /url: https://github.com/henriqqw/animecaos
+              - img [ref=e466]
+            - link "Twitter" [ref=e469] [cursor=pointer]:
+              - /url: https://x.com/getanimecaos
+              - img [ref=e470]
+            - link "Discord" [ref=e472] [cursor=pointer]:
+              - /url: https://discord.com/users/chaosphory
+              - img [ref=e473]
+            - link "Instagram" [ref=e475] [cursor=pointer]:
+              - /url: https://www.instagram.com/getanimecaos/
+              - img [ref=e476]
+            - link "LinkedIn" [ref=e479] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/henrique-lanzoni-ab0828371/
+              - img [ref=e480]
+            - link "Email" [ref=e484] [cursor=pointer]:
+              - /url: mailto:lanzonicmpny13@gmail.com
+              - img [ref=e485]
+      - generic [ref=e489]:
+        - paragraph [ref=e490]:
+          - text: Feito com ☕ por
+          - link "caosdev" [ref=e491] [cursor=pointer]:
+            - /url: https://caosdev.vercel.app
+        - paragraph [ref=e492]: Este projeto é apenas um agregador de links públicos. O conteúdo é de responsabilidade de seus respectivos proprietários.
