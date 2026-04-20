@@ -869,7 +869,7 @@ h6 {
     font-size: 0.78rem;
   }
 
-  .cta-character {
+  .cta-character.chibi-wrapper {
     display: none;
   }
 }
