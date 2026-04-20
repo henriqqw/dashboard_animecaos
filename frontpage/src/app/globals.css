@@ -663,8 +663,18 @@ h6 {
 }
 
 .screenshots-carousel-slide {
-  width: clamp(300px, 68vw, 760px);
+  width: clamp(400px, 80vw, 960px);
   flex: 0 0 auto;
+}
+
+.screenshots-carousel-slide button:hover .screenshot-img {
+  transform: scale(1.03);
+}
+
+.screenshots-carousel-slide button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 16px;
 }
 
 .screenshots-carousel-caption {

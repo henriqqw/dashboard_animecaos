@@ -3,6 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useState, useCallback } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const fadeUp: import("framer-motion").Variants = {
     hidden: { opacity: 0, y: 32 },
@@ -85,28 +91,36 @@ function MacOSWindow({
 
 export default function Screenshots() {
     const t = useTranslations("screenshots");
+    const [lightboxIndex, setLightboxIndex] = useState(-1);
 
     const items = [
         {
-            title: "AnimeCaos - Biblioteca",
-            src: "/screenshot2.webp",
+            title: "AnimeCaos - Home",
+            src: "/home.webp",
             alt: "AnimeCaos - tela principal do app",
-            width: 1397,
-            height: 926,
+            width: 1919,
+            height: 1018,
         },
         {
-            title: "AnimeCaos - Busca",
-            src: "/screenshot4.webp",
-            alt: "AnimeCaos - busca com capas dinamicas",
-            width: 1379,
-            height: 902,
+            title: "AnimeCaos - Pesquisar",
+            src: "/pesquisar.webp",
+            alt: "AnimeCaos - busca de animes",
+            width: 1919,
+            height: 1017,
         },
         {
-            title: "AnimeCaos - Detalhes",
-            src: "/screenshot3.webp",
-            alt: "AnimeCaos - detalhes do anime e episodios",
-            width: 1372,
-            height: 903,
+            title: "AnimeCaos - Resultados",
+            src: "/pesquisado.webp",
+            alt: "AnimeCaos - resultados da busca",
+            width: 1919,
+            height: 1013,
+        },
+        {
+            title: "AnimeCaos - Episodios",
+            src: "/anime_eps.webp",
+            alt: "AnimeCaos - lista de episodios",
+            width: 1919,
+            height: 1020,
         },
         {
             title: "AnimeCaos - Player",
@@ -116,22 +130,26 @@ export default function Screenshots() {
             height: 873,
         },
         {
-            title: "AnimeCaos - Player & Biblioteca",
-            src: "/screenshot5.webp",
-            alt: "AnimeCaos - player e biblioteca lado a lado",
-            width: 1440,
-            height: 900,
+            title: "AnimeCaos - Downloads",
+            src: "/downloads.webp",
+            alt: "AnimeCaos - downloads offline",
+            width: 1919,
+            height: 1015,
         },
         {
-            title: "AnimeCaos - Interface",
-            src: "/screenshot6.webp",
-            alt: "AnimeCaos - interface completa",
-            width: 1440,
-            height: 900,
+            title: "AnimeCaos - AniList",
+            src: "/anilist.webp",
+            alt: "AnimeCaos - integracao com AniList",
+            width: 1919,
+            height: 1019,
         },
     ];
 
     const loopItems = [...items, ...items];
+
+    const openLightbox = useCallback((realIndex: number) => {
+        setLightboxIndex(realIndex);
+    }, []);
 
     return (
         <section
@@ -183,37 +201,83 @@ export default function Screenshots() {
                 <div className="screenshots-carousel">
                     <div className="screenshots-carousel-mask">
                         <div className="screenshots-carousel-track">
-                            {loopItems.map((item, index) => (
-                                <article
-                                    key={`${item.src}-${index}`}
-                                    className="screenshots-carousel-slide"
-                                >
-                                    <MacOSWindow title={item.title}>
-                                        <div
+                            {loopItems.map((item, index) => {
+                                const realIndex = index % items.length;
+                                return (
+                                    <article
+                                        key={`${item.src}-${index}`}
+                                        className="screenshots-carousel-slide"
+                                    >
+                                        <button
+                                            type="button"
+                                            aria-label={`Ver ${item.title} em tela cheia`}
+                                            onClick={() => openLightbox(realIndex)}
                                             style={{
-                                                position: "relative",
+                                                all: "unset",
+                                                display: "block",
                                                 width: "100%",
-                                                aspectRatio: "16/10",
-                                                overflow: "hidden",
+                                                cursor: "zoom-in",
+                                                borderRadius: 16,
                                             }}
                                         >
-                                            <Image
-                                                src={item.src}
-                                                alt={item.alt}
-                                                width={item.width}
-                                                height={item.height}
-                                                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-                                                sizes="(max-width: 768px) 88vw, 700px"
-                                                priority={index < 2}
-                                            />
-                                        </div>
-                                    </MacOSWindow>
-                                </article>
-                            ))}
+                                            <MacOSWindow title={item.title}>
+                                                <div style={{ position: "relative", width: "100%", aspectRatio: "1919/1018", overflow: "hidden" }}>
+                                                    <Image
+                                                        src={item.src}
+                                                        alt={item.alt}
+                                                        fill
+                                                        style={{ objectFit: "cover", objectPosition: "top", transition: "transform 0.3s ease" }}
+                                                        sizes="(max-width: 768px) 88vw, 960px"
+                                                        priority={index < 2}
+                                                        className="screenshot-img"
+                                                    />
+                                                </div>
+                                            </MacOSWindow>
+                                        </button>
+                                    </article>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
             </div>
+
+            <Lightbox
+                open={lightboxIndex >= 0}
+                index={lightboxIndex}
+                close={() => setLightboxIndex(-1)}
+                slides={items.map((item) => ({
+                    src: item.src,
+                    alt: item.alt,
+                    width: item.width,
+                    height: item.height,
+                }))}
+                plugins={[Zoom, Thumbnails]}
+                zoom={{
+                    maxZoomPixelRatio: 4,
+                    zoomInMultiplier: 2,
+                    doubleTapDelay: 300,
+                    doubleClickDelay: 300,
+                    scrollToZoom: true,
+                }}
+                thumbnails={{
+                    position: "bottom",
+                    width: 100,
+                    height: 60,
+                    gap: 8,
+                    border: 2,
+                    borderRadius: 6,
+                    padding: 2,
+                }}
+                styles={{
+                    container: { backgroundColor: "rgba(0, 0, 0, 0.93)" },
+                }}
+                animation={{ fade: 200, swipe: 300 }}
+                carousel={{ finite: false }}
+                on={{
+                    view: ({ index }) => setLightboxIndex(index),
+                }}
+            />
         </section>
     );
 }
